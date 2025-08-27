@@ -1,28 +1,26 @@
-# Student Performance Prediction
+# Decision Tree Depth Analysis
 
-This project demonstrates a simple machine learning pipeline to predict **student performance scores** based on synthetic data.  
-The model is trained and evaluated using **Linear Regression** and the results are visualized.
+This project demonstrates how **Decision Tree Classifiers** perform on synthetic datasets as the **tree depth** changes.  
+It shows the effect of **overfitting and underfitting** by comparing training and test accuracy at different maximum depths.
 
 ---
 
 ## Features
-- Generates synthetic student data (study hours, sleep hours, attendance, etc.).
-- Trains a **Linear Regression model** to predict scores.
-- Splits data into training and testing sets.
-- Visualizes training and testing performance.
-- Saves results into a CSV file for further analysis.
+- Generates a synthetic dataset using `make_classification` from scikit-learn.
+- Trains **Decision Tree classifiers** with varying `max_depth` values (1–20).
+- Calculates and displays **train** and **test accuracy**.
+- Visualizes accuracy curves to detect **overfitting** and **underfitting**.
 
 ---
 
 ## Files
-- `student_performance.py` → Main script to run the project.  
-- `student_performance.csv` → Generated dataset of student performance.  
+- `decision_tree_depth_analysis.py` → Main script containing the implementation.  
 - `README.md` → Documentation for the project.
 
 ---
 
 ## Requirements
-Install dependencies before running the code:
+Install dependencies before running:
 
 ```bash
-pip install numpy pandas matplotlib scikit-learn
+pip install scikit-learn matplotlib
